@@ -318,7 +318,7 @@ img{
 
 .contact-container{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     background-color: white;
     width: 80%;
@@ -335,9 +335,17 @@ img{
     margin:40px;    
 }
 .social-media-img{
-    width: 100px;
+    width: 70px;
 }
 
+.handle-ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+.handle-ul li{
+    margin: 10px;
+}
 
 @media screen and (max-width:768px){
    .contact-container{
@@ -356,7 +364,9 @@ img{
     padding: 20px;
     font-size: 15px;
     background-color: #eee;
-    width: 80px;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
    }
 }
 
@@ -373,21 +383,28 @@ img{
     margin: 40px auto;
 }
 
+.input-container-2{
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    margin: 40px auto; */
+}
+
 label{
     font-size: 13px;
     font-weight: bold;
+    margin: 5px;
 }
 
 input{
     border-top: 0px;
     border-left: 0px;
     border-right: 0px;
-    border-bottom: 1px solid black;
     border-radius: 5px;
     padding: 20px;
     font-size: 15px;
     background-color: #eee;
-    width: 250px;
+    width: 100%;
 }
 textarea{
      border-top: 0px;
@@ -398,12 +415,12 @@ textarea{
     padding: 20px;
     font-size: 15px;
     background-color: #eee;
-    width: 250px;
+    width: 100%;
 }
 
 button{
     padding: 15px;
-    width: 100%;
+    width: 300px;
     background-color: #062863;
     color: white;
     border-top-left-radius: 10px;
