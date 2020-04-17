@@ -60,7 +60,8 @@ nav{
     }
 }
 
-@media screen and (max-width:768px){
+
+@media screen and (max-width:640px){
     body{
         overflow-x: hidden;
     }
@@ -88,6 +89,7 @@ nav{
     .section-a{
         display: flex;
         flex-direction: column;
+        width: 100%;
     }
     img{
         width: 100%;
@@ -220,7 +222,7 @@ section{
 
 
 .photocard{
-    width:300px;
+    width:100%;
     height: fit-content;
     border: 1px solid silver;
     justify-content: center;
@@ -248,10 +250,13 @@ box-shadow: 10px 10px 7px -9px rgba(0,0,0,0.60);
 
 .bio-right-1{
     /* border: 1px solid silver;     */
-    width:100%;
     font-size: 14px;
     font-weight: 400;
     margin-top: -10px;
+    background-color: white;
+    display: flex;
+    padding: 10px;
+    border-radius: 5px;
     /* padding-top: 20px; */
     /* color: rgb(100, 100, 100); */
     /* float: right; */
@@ -262,10 +267,9 @@ box-shadow: 10px 10px 7px -9px rgba(0,0,0,0.60);
 }
 
 .bio-1{
-    width: 100%;
     border: 1px solid silver;
     border-radius: 5px;
-    margin: 10px;
+    margin: -.1px 10px;
     background-color: white;
 }
 
@@ -309,43 +313,52 @@ img{
     font-size: 20px;
 }
 
-.contact-section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-}
 
-.contact-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    background-color: white;
-    width: 80%;
-}
 
 .contact-header{
- padding: 20px;
+    padding: 20px;
     color: black;
     font-weight: 600;
-    font-size: 20px;    
+    font-size: 20px;   
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.section-b{
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    /* padding: 15px; */
+    overflow: scroll;
 }
 
 .social-links{
     margin:40px;    
 }
 .social-media-img{
-    width: 70px;
+    width: 50px;
 }
 
 .handle-ul{
-    display: flex;
-    flex-direction: column;
     list-style: none;
+    display: flex;
 }
 .handle-ul li{
-    margin: 10px;
+    margin: 20px;
 }
+
+.gmail{
+    display:none;
+}
+.tel{
+    display: none;
+}
+
+
 
 @media screen and (max-width:768px){
    .contact-container{
@@ -355,18 +368,13 @@ img{
    .social-links{
        margin: 20px;
    }
-   input{
-    border-top: 0px;
-    border-left: 0px;
-    border-right: 0px;
-    border-bottom: 1px solid black;
-    border-radius: 5px;
-    padding: 20px;
-    font-size: 15px;
-    background-color: #eee;
-    max-width: 300px;
-    display: flex;
-    flex-direction: column;
+ 
+   .bio-right-1{
+       display: flex;
+       flex-direction: column;
+   }
+   .photocard{
+       margin-bottom: 10px;
    }
 }
 
@@ -386,26 +394,32 @@ img{
 .input-container-2{
     display: flex;
     flex-direction: column;
-    width: 450px;
-    margin: 40px auto; */
+    margin-bottom: 20px;
 }
+
 
 label{
     font-size: 13px;
     font-weight: bold;
-    margin: 5px;
+    margin-bottom: 10px;
+    
 }
 
-input{
+  input{
     border-top: 0px;
     border-left: 0px;
     border-right: 0px;
+    /* border-bottom: 1px solid black; */
     border-radius: 5px;
     padding: 20px;
     font-size: 15px;
     background-color: #eee;
-    width: 100%;
-}
+    
+    display: flex;
+    flex-direction: column;
+   }
+
+
 textarea{
      border-top: 0px;
     border-left: 0px;
@@ -420,7 +434,9 @@ textarea{
 
 button{
     padding: 15px;
-    width: 300px;
+    font-size: 1em;
+    letter-spacing: 1px;
+    width: auto;
     background-color: #062863;
     color: white;
     border-top-left-radius: 10px;
