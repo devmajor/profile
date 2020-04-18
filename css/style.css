@@ -107,6 +107,10 @@ nav{
     .section-b{
         width: 50%;
     }
+    .input-container-2{
+        display: flex;
+        max-width: 450px;
+    }
 
 }
 
