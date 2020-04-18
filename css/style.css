@@ -107,13 +107,17 @@ nav{
   
     .input-container-2{
         display: flex;
-        max-width: 200px;
+        max-width: 250px;
     }
 
     .handle-ul li{
-        margin: 5px;
-        height: 30px;
-        width: 30px;
+       
+        height: 20px;
+        width: 10px;
+    }
+    
+    .social-media-img{
+       width: 3px;
     }
 }
 
