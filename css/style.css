@@ -115,14 +115,14 @@ nav{
         padding: 0;
     }
 
-    .handle-ul li{
+    .handle-ul .handle-ul-li{
         justify-content: space-between;
         margin: 0;
         width: 30px;
         
     }
     
-    .handle-ul li a img{
+    .handle-ul .handle-ul-li a img{
         width: 30px;
     }
     
@@ -130,13 +130,6 @@ nav{
         width: 10px;
     }
     
-    .gmail{
-        display: none;
-    }
-    
-    .tel{
-        display: none;
-    }
     
     .mobile-view-ul .tel {
         display: flex;
@@ -172,9 +165,27 @@ nav{
     
 }
 
+@media screen and (max-width:768px){
+   .contact-container{
+    display: flex;
+    flex-direction: column;
+   }
+   .social-links{
+       margin: 20px;
+   }
+ 
+   .bio-right-1{
+       display: flex;
+       flex-direction: column;
+   }
+   .photocard{
+       margin-bottom: 10px;
+   }
+}
+
 
 .nav-active{
-    transform: translateX(0%);
+    transform: translateX(0%); 
 }
 
 @keyframes navLinkFade {
@@ -397,6 +408,10 @@ img{
     border-radius: 5px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: fit-content;
     /* padding: 15px; */
 }
 
@@ -419,7 +434,7 @@ img{
     list-style: none;
     display: flex;
 }
-.handle-ul li{
+.handle-ul .handle-ul-li{
     margin: 20px;
 }
 
@@ -432,23 +447,7 @@ img{
 
 
 
-@media screen and (max-width:768px){
-   .contact-container{
-    display: flex;
-    flex-direction: column;
-   }
-   .social-links{
-       margin: 20px;
-   }
- 
-   .bio-right-1{
-       display: flex;
-       flex-direction: column;
-   }
-   .photocard{
-       margin-bottom: 10px;
-   }
-}
+
 
 .bio-body{
     /* padding: 5px; */
@@ -515,6 +514,11 @@ button{
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
     cursor: pointer;
+    border: 0px solid transparent;
+}
+
+button:hover{
+    background-color: midnightblue;
 }
 
 footer{

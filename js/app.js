@@ -28,10 +28,10 @@ toBio.addEventListener('click', function(){
     smoothScroll('.bio-container', 1000);
 })
 
-var toContact = document.querySelector('.link-to-contact');
-toContact.addEventListener('click', function(){
-    smoothScroll('.contact-show', 1000);
-})
+// var toContact = document.querySelector('.link-to-contact');
+// toContact.addEventListener('click', function(){
+//     smoothScroll('.contact-show', 1000);
+// })
 
 var toTop= document.querySelector('.top');
 toTop.addEventListener('click', function(){
